@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 %global cvs_version 1_8_1_3
 %global majorversion 1
 Name:          hsqldb1
@@ -93,3 +93,10 @@ cp -r doc/src/* %{buildroot}%{_javadocdir}/%{name}
 %files javadoc
 %{_javadocdir}/%{name}
 %doc doc/hsqldb_lic.txt
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.1.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Tue Jun 04 2013 gil cattaneo <puntogil@libero.it> 1.8.1.3-1
+- initial rpm
