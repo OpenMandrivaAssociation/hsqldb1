@@ -3,11 +3,11 @@
 %global majorversion 1
 Name:          hsqldb1
 Version:       1.8.1.3
-Release:       2.0%{?dist}
+Release:       4.1
 Summary:       HyperSQL Database Engine
 License:       BSD
 URL:           http://hsqldb.sourceforge.net/
-
+Group:	       Databases
 Source0:       http://downloads.sourceforge.net/hsqldb/hsqldb_%{cvs_version}.zip
 Source1:       http://mirrors.ibiblio.org/pub/mirrors/maven2/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom
 Patch0:        hsqldb-jdbc-4.1.patch
@@ -39,7 +39,7 @@ database management system that is completely free under the Modified
 BSD License. Yes, that's right, completely free of cost or restrictions!
 
 %package javadoc
-
+Group:		Documentation
 Summary:       Javadoc for %{name}
 
 %description javadoc
@@ -84,11 +84,8 @@ install -pm 644 pom.xml %{buildroot}%{_mavenpomdir}/JPP-%{name}.pom
 mkdir -p %{buildroot}%{_javadocdir}/%{name}
 cp -r doc/src/* %{buildroot}%{_javadocdir}/%{name}
 
-%files
+%files -f .mfiles
 %doc doc/hsqldb_lic.txt
-%{_javadir}/*
-%{_mavendepmapfragdir}/*
-%{_mavenpomdir}/*
 
 %files javadoc
 %{_javadocdir}/%{name}
