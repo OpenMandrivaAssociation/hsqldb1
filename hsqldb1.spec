@@ -3,7 +3,7 @@
 %global majorversion 1
 Name:          hsqldb1
 Version:       1.8.1.3
-Release:       4.2
+Release:       4.3
 Summary:       HyperSQL Database Engine
 License:       BSD
 URL:           http://hsqldb.sourceforge.net/
