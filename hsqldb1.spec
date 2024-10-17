@@ -6,7 +6,7 @@ Version:       1.8.1.3
 Release:       4.3
 Summary:       HyperSQL Database Engine
 License:       BSD
-URL:           http://hsqldb.sourceforge.net/
+URL:           https://hsqldb.sourceforge.net/
 Group:	       Databases
 Source0:       http://downloads.sourceforge.net/hsqldb/hsqldb_%{cvs_version}.zip
 Source1:       http://mirrors.ibiblio.org/pub/mirrors/maven2/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom
